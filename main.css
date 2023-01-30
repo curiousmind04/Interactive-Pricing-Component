@@ -96,10 +96,6 @@ main {
   cursor: pointer;
 }
 
-#slider::-webkit-slider-thumb:hover {
-  opacity: 0.8;
-}
-
 #slider::-webkit-slider-thumb:active {
   opacity: 1;
   background-color: hsl(174, 85%, 40%);
@@ -212,8 +208,7 @@ main {
   background-color: #2196f3;
 } */
 
-input:active + .toggle-slider,
-input:hover + .toggle-slider {
+input:active + .toggle-slider {
   background: hsl(174, 77%, 80%);
 }
 
@@ -257,7 +252,6 @@ button {
   margin-top: 1.2rem;
 }
 
-button:hover,
 button:active {
   color: #fff;
 }
@@ -290,6 +284,9 @@ button:active {
   #slider {
     width: 82%;
     margin-bottom: 3.5rem;
+  }
+  #slider::-webkit-slider-thumb:hover {
+    opacity: 0.8;
   }
   .price {
     position: absolute;
@@ -324,6 +321,9 @@ button:active {
     position: absolute;
     left: 340px;
   }
+  input:hover + .toggle-slider {
+    background: hsl(174, 77%, 80%);
+  }
   hr {
     margin-bottom: 1.8rem;
   }
@@ -344,5 +344,8 @@ button:active {
     font-size: 0.75rem;
     margin-top: 0rem;
     margin-left: 1.2rem;
+  }
+  button:hover {
+    color: #fff;
   }
 }
