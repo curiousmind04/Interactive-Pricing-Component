@@ -27,16 +27,20 @@
         <p class="pageviews">
           <span class="views-number">100K </span>Pageviews
         </p>
-        <label for="slider" style="display: none">Slider Input Options</label>
         <input type="range" id="slider" min="0" max="4" value="2" />
-        <p class="price">
+        <label class="price" for="slider">
           <span class="price-amount">$16.00</span
           ><span class="price-duration"> / month</span>
-        </p>
+        </label>
         <div class="billing-options">
           <span class="monthly">Monthly Billing</span>
-          <label class="switch">
-            <input type="checkbox" class="toggle" title="toggle switch" />
+          <label class="switch" for="toggle-label" title="toggle switch">
+            <input
+              type="checkbox"
+              id="toggle-label"
+              class="toggle"
+              title="toggle switch"
+            />
             <span class="toggle-slider round"></span>
           </label>
           <span class="yearly">Yearly Billing</span>
