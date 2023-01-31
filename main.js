@@ -15,27 +15,27 @@ const monthlyCalculation = () => {
   if (slider.value === "0") {
     priceAmount.innerHTML = "$8.00";
     viewsNumber.innerHTML = "10K ";
-    priceDuration.innerHTML = " / monthly";
+    priceDuration.innerHTML = " / month";
   }
   if (slider.value === "1") {
     priceAmount.innerHTML = "$12.00";
     viewsNumber.innerHTML = "50K ";
-    priceDuration.innerHTML = " / monthly";
+    priceDuration.innerHTML = " / month";
   }
   if (slider.value === "2") {
     priceAmount.innerHTML = "$16.00";
     viewsNumber.innerHTML = "100K ";
-    priceDuration.innerHTML = " / monthly";
+    priceDuration.innerHTML = " / month";
   }
   if (slider.value === "3") {
     priceAmount.innerHTML = "$24.00";
     viewsNumber.innerHTML = "500K ";
-    priceDuration.innerHTML = " / monthly";
+    priceDuration.innerHTML = " / month";
   }
   if (slider.value === "4") {
     priceAmount.innerHTML = "$36.00";
     viewsNumber.innerHTML = "1M ";
-    priceDuration.innerHTML = " / monthly";
+    priceDuration.innerHTML = " / month";
   }
 };
 
