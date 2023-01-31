@@ -6,30 +6,33 @@
   padding: 0;
 }
 
+html {
+  min-width: 23.5rem;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   background-image: url("images/bg-pattern.svg");
   background-repeat: no-repeat;
-  /* background-position: top left; */
   background-color: hsl(230, 100%, 99%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  min-width: 23.5rem;
 }
 
 .title-container {
   background: url("images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: rgb(232, 247, 197); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 315px;
-  height: 180px;
+  width: 19.6875rem;
+  height: 11.25rem;
   text-align: center;
   padding: 2rem 0.2rem;
   margin-bottom: 1rem;
@@ -43,7 +46,7 @@ h1 {
 
 .title-container p {
   color: hsl(225, 20%, 60%);
-  width: 170px;
+  width: 10.625rem;
   margin-left: auto;
   margin-right: auto;
   font-size: 0.8rem;
@@ -54,7 +57,7 @@ main {
 }
 
 .pricing-container {
-  width: 315px;
+  width: 19.6875rem;
   background: hsl(0, 0%, 100%);
   text-align: center;
   padding: 2.5rem 0 2rem 0;
@@ -75,7 +78,7 @@ main {
 
 #slider {
   -webkit-appearance: none;
-  height: 10px;
+  height: 0.625rem;
   width: 85%;
   border-radius: 0.6rem;
   outline: none;
@@ -85,8 +88,8 @@ main {
 #slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background-image: url("images/icon-slider.svg");
   background-repeat: no-repeat;
@@ -102,8 +105,8 @@ main {
 }
 
 #slider::-moz-range-thumb {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background-image: url("images/icon-slider.svg");
   background-repeat: no-repeat;
@@ -115,6 +118,9 @@ main {
 
 .price {
   margin-bottom: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .price-amount {
@@ -125,6 +131,7 @@ main {
 
 .price-duration {
   color: hsl(225, 20%, 60%);
+  margin-left: 0.4rem;
 }
 
 .billing-options {
@@ -142,24 +149,24 @@ main {
 
 .monthly {
   position: absolute;
-  right: 150px;
+  right: 9.375rem;
 }
 
 .yearly {
   position: absolute;
-  left: 150px;
+  left: 9.375rem;
 }
 
 .discount {
   font-size: 0.7rem;
   font-weight: 800;
   position: absolute;
-  left: 232px;
+  left: 14.5rem;
   background: hsl(14, 92%, 95%);
   color: hsl(15, 100%, 70%);
-  width: 40px;
-  height: 20px;
-  line-height: 20px;
+  width: 2.5rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
   border-radius: 1.2rem;
 }
 
@@ -170,8 +177,8 @@ main {
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 23px;
+  width: 2.5rem;
+  height: 1.4375rem;
 }
 
 .switch input {
@@ -272,7 +279,7 @@ button:active {
     width: 100%;
   }
   .pricing-container {
-    width: 542px;
+    width: 33.875rem;
     padding: 3.8rem 0 1.5rem 0;
   }
   .pageviews {
@@ -290,7 +297,7 @@ button:active {
   }
   .price {
     position: absolute;
-    top: 47px;
+    top: 42px;
     right: 49px;
   }
   .price-amount {
@@ -300,10 +307,10 @@ button:active {
     margin-bottom: 2.4rem;
   }
   .monthly {
-    right: 255px;
+    right: 15.9375rem;
   }
   .yearly {
-    left: 255px;
+    left: 15.9375rem;
   }
   .discount {
     display: none;
@@ -313,13 +320,13 @@ button:active {
     font-weight: 800;
     background: hsl(14, 92%, 95%);
     color: hsl(15, 100%, 70%);
-    width: 85px;
-    height: 20px;
-    line-height: 20px;
+    width: 5.3125rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
     border-radius: 1.2rem;
     display: block;
     position: absolute;
-    left: 340px;
+    left: 21.25rem;
   }
   input:hover + .toggle-slider {
     background: hsl(174, 77%, 80%);
@@ -332,7 +339,6 @@ button:active {
     justify-content: space-around;
     align-items: center;
     text-align: left;
-    /* padding: 0 1rem; */
   }
   .checklist {
     font-size: 0.75rem;
